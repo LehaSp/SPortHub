@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Hub</title>
+    <link rel="stylesheet" href="/otgpt/css/styles_main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <h1><img src="/otgpt/img/logo1.png" alt="SP Hub"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="tournaments.html">Турниры</a></li>
+                        <li><a href="teams.html">Команды</a></li>
+                        <li><a href="players.html">Игроки</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="profile.html">Профиль</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="tournaments">
+                <h2>Текущие и Ближайшие Турниры</h2>
+                
+                <div class="tournament-carousel">
+                    <div class="tournament">
+                        <h3>Турнир 1</h3>
+                        <p>Дата: 25 января 2025</p>
+                        <p>Место проведения: Москва</p>
+                    </div>
+                    <div class="tournament">
+                        <h3>Турнир 2</h3>
+                        <p>Дата: 30 января 2025</p>
+                        <p>Место проведения: Санкт-Петербург</p>
+                    </div>
+                    <div class="tournament">
+                        <h3>Турнир 3</h3>
+                        <p>Дата: 5 февраля 2025</p>
+                        <p>Место проведения: Казань</p>
+                    </div>
+                    <div class="tournament">
+                        <h3>Турнир 3</h3>
+                        <p>Дата: 5 февраля 2025</p>
+                        <p>Место проведения: Казань</p>
+                    </div>
+                    
+                </div>
+            </section>
+            
+
+            <section class="recent-matches">
+                <h2>Последние матчи</h2>
+                <ul>
+                    <li class="match-row">
+                        <span class="team team-left">Команда А</span>
+                        <span class="score">85 - 78</span>
+                        <span class="team team-right">Команда Б</span>
+                    </li>
+                    <li class="match-row">
+                        <span class="team team-left">Команда С</span>
+                        <span class="score">92 - 88</span>
+                        <span class="team team-right">Команда D</span>
+                    </li>
+                    <li class="match-row">
+                        <span class="team team-left">Команда Е</span>
+                        <span class="score">100 - 95</span>
+                        <span class="team team-right">Команда F</span>
+                    </li>
+                </ul>
+            </section>
+            
+
+            <section class="ratings">
+                <div class="top-teams">
+                    <h2>Топ команд</h2>
+                    <ul class="team-list">
+                        <li>
+                            <span>Команда A (Винрейт: 80%)</span>
+                            <p>Статистика: 20 побед, 5 поражений</p>
+                            <button class="details-btn" onclick="showTeamDetails('Команда А', ['Игрок 1', 'Игрок 2', 'Игрок 3','Игрок 4', 'Игрок 5'], ' +7 (999) 173-08-29',1,'80%',20,5,'Джеки Чан',90)">Подробнее</button>
+                        </li>
+                        <li>
+                            <span>Команда A (Винрейт: 80%)</span>
+                            <p>Статистика: 20 побед, 5 поражений</p>
+                            <button class="details-btn" onclick="showTeamDetails('Команда А', ['Игрок 1', 'Игрок 2', 'Игрок 3','Игрок 4', 'Игрок 5'], ' +7 (999) 173-08-29',1,'80%',20,5,'Джеки Чан',90)">Подробнее</button>
+                        </li>
+                        <li>
+                            <span>Команда A (Винрейт: 80%)</span>
+                            <p>Статистика: 20 побед, 5 поражений</p>
+                            <button class="details-btn" onclick="showTeamDetails('Команда А', ['Игрок 1', 'Игрок 2', 'Игрок 3','Игрок 4', 'Игрок 5'], ' +7 (999) 173-08-29',1,'80%',20,5,'Джеки Чан',90)">Подробнее</button>
+                        </li>
+                        <li>
+                            <span>Команда A (Винрейт: 80%)</span>
+                            <p>Статистика: 20 побед, 5 поражений</p>
+                            <button class="details-btn" onclick="showTeamDetails('Команда А', ['Игрок 1', 'Игрок 2', 'Игрок 3','Игрок 4', 'Игрок 5'], ' +7 (999) 173-08-29',1,'80%',20,5,'Джеки Чан',90)">Подробнее</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="top-players">
+                    <h2>Топ игроков</h2>
+                    <ul class="player-list">
+                        <li>
+                            <span>Игрок 1 (КРП: 25.3)</span>
+                            <p>Очки: 500, Подборы: 150, Передачи: 120</p>
+                            <button class="details-btn" onclick="showPlayerDetails('Игрок 1', 'Команда А', 1, 500, 150, 120)">Подробнее</button>
+                        </li>
+                        <li>
+                            <span>Игрок 2 (КРП: 24.8)</span>
+                            <p>Очки: 480, Подборы: 130, Передачи: 140</p>
+                            <button class="details-btn" onclick="showPlayerDetails('Игрок 2', 'Команда Б', 2, 480, 130, 140)">Подробнее</button>
+                        </li>
+                        <li>
+                            <span>Игрок 2 (КРП: 24.8)</span>
+                            <p>Очки: 480, Подборы: 130, Передачи: 140</p>
+                            <button class="details-btn" onclick="showPlayerDetails('Игрок 2', 'Команда Б', 2, 480, 130, 140)">Подробнее</button>
+                        </li>
+                        <li>
+                            <span>Игрок 2 (КРП: 24.8)</span>
+                            <p>Очки: 480, Подборы: 130, Передачи: 140</p>
+                            <button class="details-btn" onclick="showPlayerDetails('Игрок 2', 'Команда Б', 2, 480, 130, 140)">Подробнее</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="faq">
+                <h2>Вопрос - Ответ</h2>
+                <div class="faq-item">
+                    <button class="faq-question">Что такое КРП?</button>
+                    <div class="faq-answer">
+                        <p>КРП (Комплексный Рейтинг Полезности) — это показатель, который отражает вклад игрока в командный результат. Он учитывает очки, подборы, передачи, блок-шоты, перехваты и другие статистические показатели, влияющие на результативность игрока.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Как определяется рейтинг команд?</button>
+                    <div class="faq-answer">
+                        <p>Рейтинг команд определяется по их результатам в официальных турнирах. Он зависит от мест, занятых в турнирах, а также от количества побед и поражений в матчах.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Как зарегистрироваться на турнир?</button>
+                    <div class="faq-answer">
+                        <p>Для регистрации на турнир необходимо заполнить заявку на сайте в соответствующем разделе. После подачи заявки, вам будет направлена информация о дальнейших шагах и условиях участия.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Как стать частью команды?</button>
+                    <div class="faq-answer">
+                        <p>Для того чтобы стать частью команды, пожалуйста, свяжитесь с представителями команды через контактные данные, указанные на странице команды. Команда рассмотрит вашу кандидатуру и предоставит дальнейшие инструкции.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Как узнать текущие турниры?</button>
+                    <div class="faq-answer">
+                        <p>Текущие турниры отображаются на странице "Турниры". Здесь вы можете найти информацию о текущих турнирах, а также о будущих и прошедших событиях.</p>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+
+        <footer>
+            <p>Контакты: zhackfresko@gmail.com</p>
+        </footer>
+    </div>
+        <!-- Модальное окно -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    
+    <script src="/otgpt/js/script_main.js"></script>
+</body>
+</html>
+

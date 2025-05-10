@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Hub</title>
+    <link rel="stylesheet" href="/otgpt/css/styles_profile.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <h1><img src="/otgpt/img/logo1.png" alt="SP Hub"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="tournaments.html">Турниры</a></li>
+                        <li><a href="teams.html">Команды</a></li>
+                        <li><a href="players.html">Игроки</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="profile.html">Профиль</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+    <main class="profile-container">
+        <h1>Мой профиль</h1>
+        <section class="profile-section">
+            
+
+            <!-- Отображение профиля -->
+            <div id="profile-display">
+                <p><strong>Имя:</strong> <span id="profile-name"></span></p>
+                <p><strong>Никнейм:</strong> <span id="profile-nickname"></span></p>
+                <p><strong>Email:</strong> <span id="profile-email"></span></p>
+                <p><strong>Команда:</strong> <span id="profile-team"></span></p>
+                <p><strong>Роль:</strong> <span id="profile-role"></span></p>
+                <p><strong>О себе:</strong> <span id="profile-bio"></span></p>
+                <button onclick="openModal()" class="edit-btn">Редактировать профиль</button>
+            </div>
+        </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2>Редактировать профиль</h2>
+                <form id="edit-profile-form">
+                  <label>Имя:
+                    <input type="text" id="edit-name" />
+                  </label>
+                  <label>Никнейм:
+                    <input type="nickname" id="edit-nickname" />
+                  </label>
+                  <label>Email:
+                    <input type="email" id="edit-email" />
+                  </label>
+                  <label>Роль:
+                    <input id="edit-role"/>
+                  </label>
+                  <label>Команда:
+                    <input id="edit-team"/>
+                  </label>
+                  <label>О себе:
+                    <textarea id="edit-bio"></textarea>
+                  </label>
+                  <button type="submit" class="edit-btn" onclick="closeModal()">Сохранить</button>
+                </form>
+            </div>
+        </div>
+
+        <section class="profile-stats">
+          <h3>Статистика</h3>
+          <ul>
+            <li>Участие в турнирах: 5</li>
+            <li>Побед: 3</li>
+            <li>Процент побед: 60%</li>
+            <li>Очки: 2000</li>
+            <li>Подборы: 5454</li>
+          </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>Контакты: zhackfresko@gmail.com</p>
+    </footer>
+    <script src="/otgpt/js/script_profile.js"></script>
+</body>
+</html>
