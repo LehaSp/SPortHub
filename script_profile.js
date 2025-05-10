@@ -65,11 +65,12 @@ function updateProfileDisplay() {
 
 // Примерные данные профиля (можно заменить на данные из базы или localStorage)
 const defaultProfile = {
-    name: "(Пример:Вова Адидас)",
-    nickname: "(Пример: PACAN)",
-    email: "(Пример: vovan@gmail.com)",
-    role: "(Пример: Защитник)",
-    bio: "(Пример: Я ЗДЕСЬ, ЗА ЭТУ УЛИЦУ СТОЮ!)"
+    name: "Вова Адидас",
+    nickname: "Пример: PACAN",
+    email: "vovan@gmail.com",
+    team: "Пацаны",
+    role: "Защитник",
+    bio: "Я на вас смотрю, вы не готовы все!"
 };
 
 // Загрузка профиля
