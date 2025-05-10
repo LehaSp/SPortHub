@@ -66,7 +66,7 @@ function updateProfileDisplay() {
 // Примерные данные профиля (можно заменить на данные из базы или localStorage)
 const defaultProfile = {
     name: "Вова Адидас",
-    nickname: "Пример: PACAN",
+    nickname: "PACAN",
     email: "vovan@gmail.com",
     team: "Пацаны",
     role: "Защитник",
